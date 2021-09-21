@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+  </head>
+<body style="background-color:blue">
+  	<h1 style="color:black;text-align:center;font-size:400%;font-family:Comic Sans MS">Sudoku : Brain Game</h1>
+  	<br>
+  	<div id='timeLabel' style="text-align:right;padding-right:2cm;font-size:150%;font-weight:bold"></div><br>
+  	<div id='time' style="text-align:right;padding-right:3cm;font-size:150%"></div>
+    <br>
+  	<div id="Game" style="text-align:center">
+  	<br><br><br><br>
+  		<form class="w3-container" style="margin-left:400px;margin-right:400px" >
+  		<label for="dlevel" style="font-size : 120%">Select The Difficulty Level</label>
+      <select class="form-control" required style="height:50px;font-size:25px;" id="level">
+        <option value="2">Easy</option>
+        <option value="3">Medium</option>
+        <option value="4">Hard</option>
+    	</select>
+    	<br><br><br>
+    	<button type="button" class="btn btn-danger btn-lg" onclick="start()">Generate Puzzle</button>
+    </form></div><br>
+    <script src="sudoku.js"></script>
+</body>
+</html>
